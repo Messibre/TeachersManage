@@ -1,0 +1,204 @@
+.root {
+    -primary-color: #0056b3;
+    -primary-dark: #004494;
+    -background-color: #f4f7f6;
+    -surface-color: #ffffff;
+    -text-color: #1a1a1a;
+    -text-secondary: #4a4a4a;
+    -accent-color: #e7f1ff;
+    -border-color: #e0e0e0;
+    -muted-text: #718096;
+}
+
+.root-pane {
+    -fx-background-color: -background-color;
+    -fx-font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.side-nav {
+    -fx-background-color: -surface-color;
+    -fx-padding: 20;
+    -fx-spacing: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 10, 0, 2, 0);
+    -fx-min-width: 240px;
+    -fx-pref-width: 240px;
+}
+
+.app-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+    -fx-text-fill: -primary-color;
+    -fx-padding: 0 0 30 0;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -text-secondary;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-cursor: hand;
+    -fx-background-radius: 8;
+    -fx-padding: 12 16;
+    -fx-max-width: infinity;
+}
+
+.nav-button:hover {
+    -fx-background-color: -accent-color;
+    -fx-text-fill: -primary-color;
+}
+
+.nav-button.active {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: white;
+}
+
+.content-area {
+    -fx-padding: 30;
+    -fx-background-color: -background-color;
+}
+
+.card {
+    -fx-background-color: -surface-color;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.04), 8, 0, 0, 2);
+    -fx-padding: 24;
+}
+
+.button {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: -primary-dark;
+    -fx-effect: dropshadow(gaussian, rgba(0, 86, 179, 0.3), 8, 0, 0, 2);
+}
+
+.button:pressed {
+    -fx-background-color: -primary-dark;
+    -fx-translate-y: 1;
+}
+
+.btn-secondary {
+    -fx-background-color: -surface-color;
+    -fx-text-fill: -text-color;
+    -fx-border-color: -border-color;
+    -fx-border-radius: 6;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: -accent-color;
+    -fx-border-color: -primary-color;
+}
+
+.text-field,
+.password-field,
+.combo-box,
+.date-picker {
+    -fx-background-color: -surface-color;
+    -fx-border-color: -border-color;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 8 12;
+    -fx-prompt-text-fill: -muted-text;
+}
+
+.text-field:focused,
+.password-field:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-border-color: -primary-color;
+    -fx-effect: dropshadow(gaussian, rgba(0, 86, 179, 0.1), 4, 0, 0, 0);
+}
+
+.label {
+    -fx-text-fill: -text-color;
+    -fx-font-size: 13px;
+}
+
+
+.list-cell {
+    -fx-text-fill: -text-color;
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #eeeeee;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -text-secondary;
+    -fx-font-weight: 700;
+    -fx-font-size: 12px;
+    -fx-padding: 8 10;
+}
+
+.table-view .cell {
+    -fx-text-fill: -text-color;
+    -fx-padding: 6 12;
+    -fx-border-color: transparent;
+}
+
+.table-row-cell {
+    -fx-background-color: -surface-color;
+    -fx-text-fill: -text-color;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #fcfcfc;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: -accent-color;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -primary-color;
+    -fx-text-background-color: white;
+}
+
+.profile-header {
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+    -fx-text-fill: -primary-color;
+    -fx-padding: 0 0 16 0;
+}
+
+.section-header {
+    -fx-font-size: 18px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -text-color;
+    -fx-padding: 0 0 12 0;
+}
+
+.data-label {
+    -fx-text-fill: -text-secondary;
+    -fx-font-weight: 600;
+    -fx-font-size: 13px;
+    -fx-min-width: 120px;
+}
+
+.data-value {
+    -fx-text-fill: -text-color;
+    -fx-font-size: 15px;
+}
+
+.stat-card {
+    -fx-background-color: -surface-color;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 8, 0, 0, 2);
+    -fx-padding: 24;
+    -fx-spacing: 12;
+}
